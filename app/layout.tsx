@@ -80,7 +80,7 @@ const SearchBar = memo(() => {
         onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
       />
       {showDropdown && results.length > 0 && (
-        <div className="absolute left-0 right-0 mt-2 rounded-lg shadow-lg z-50 max-h-72 overflow-y-auto bg-slate-800 text-white border border-gray-700">
+        <div className="absolute left-0 right-0 mt- rounded-lg shadow-lg z-50 max-h-72 overflow-y-auto bg-slate-800 text-white border border-gray-700">
           {results.map((item, idx) => (
             <div
               key={item.id || idx}
@@ -133,15 +133,15 @@ const Header = memo(() => {
             <SearchBar />
 
             {/* Nav Links */}
-            <nav className="flex space-x-4 md:space-x-6">
-              <Link
+            {/* <nav className="flex space-x-4 md:space-x-6"> */}
+              {/* <Link
                 href="/about"
                 className="relative group transition-all duration-300 text-gray-300 hover:text-white"
               >
                 Models
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
-              </Link>
-            </nav>
+              </Link> */}
+            {/* </nav> */}
           </div>
         </div>
       </nav>

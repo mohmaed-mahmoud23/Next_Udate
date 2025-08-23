@@ -4,13 +4,13 @@ import Image from "next/image"; // ✅ بتاع Next.js مش الـ DOM
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useTypes, fetchTypes } from "../../hooks/useTypes";
-import type { Type } from "../../lib/types";
+import { useTypes, fetchTypes } from "../hooks/useTypes";
+import type { Type } from "../lib/types";
 import { useQueryClient } from "@tanstack/react-query";
 import { motion } from "framer-motion";
 
 const TypesList = dynamic(
-  () => import("../../components/TypesList").then((m) => m.TypesList),
+  () => import("../components/TypesList").then((m) => m.TypesList),
   { ssr: false }
 );
 
