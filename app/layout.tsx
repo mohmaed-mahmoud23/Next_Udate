@@ -80,7 +80,7 @@ const SearchBar = memo(() => {
         onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
       />
       {showDropdown && results.length > 0 && (
-        <div className="absolute left-0 right-0 mt-1 rounded-lg shadow-lg z-50 max-h-72 overflow-y-auto bg-slate-800 text-white border border-gray-700">
+        <div className="absolute left-0 right-0 mt-9 rounded-lg shadow-lg z-50 max-h-72 overflow-y-auto bg-slate-800 text-white border border-gray-700">
           {results.map((item, idx) => (
             <div
               key={item.id || idx}
@@ -170,7 +170,7 @@ const MobileSearchButton = ({ onClick }: { onClick: () => void }) => {
   return (
     <button
       onClick={onClick}
-      className="md:hidden fixed bottom-8 right-1/2 translate-x-1/2 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-xl z-50"
+      className="md:hidden fixed bottom-8 right-6 translate-x-1/4 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-xl z-50 text-3xl"
     >
       🔍
     </button>
